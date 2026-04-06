@@ -2,12 +2,13 @@ import { use } from "react"
 
 const Asite = ({ API }) => {
     const data = use(API)
-    console.log(data)
+    // console.log(data)
     return (
         <>
-        <div className="grid grid-cols-1 py-15 px-20 bg-gray-800 rounded-lg  ">
+        <div className="flex flex-col py-15">
+             <h1 className="text-2xl font-semibold py-4 text-gray-500 ">All Meal Categories</h1>
             {
-                data.meals.map(item => <button className="btn btn-primary mt-2  max-w-30">{item.strCategory}</button>)
+                data.meals.map((item,ind) => <li key={ind} className="">{item.strCategory}</li>)
             }
         </div>
         </>
