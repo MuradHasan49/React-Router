@@ -3,24 +3,22 @@ import React, { useState, useEffect } from 'react';
 
 const MealCard = ({ clickBtn }) => {
 
-    const [data, setData] = useState(null);
+const [showData, setShowData] = useState(null);
 
-    useEffect(() => {
-        fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${clickBtn}`)
-            .then(res => res.json())
-            .then(result => {
-                setData(result.meals);
-                data(null);
-            });
-    });
+useEffect(() => {
+    fetch(`https://www.themealdb.com/api/json/v1/1/filter.php?c=${clickBtn}`)
+        .then(res => res.json())
+        .then(result => {
+            setShowData(result.meals);
+        });
+}, [clickBtn]); 
 
 
 
     return (
         <>
             <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6 p-4">
-    {data?.map((meal) => (
-        /* The key must be on the direct child of the map function */
+    {showData?.map((meal) => (
         <div 
             key={meal.idMeal} 
             className="card bg-base-100 shadow-xl border border-base-200 transition-all hover:scale-[1.02] overflow-hidden group"

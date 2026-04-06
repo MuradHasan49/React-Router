@@ -21,7 +21,7 @@ const Home = () => {
 
     return (
         <>
-            <div className=" container mx-auto">
+            <div className=" container mx-auto py-10">
                 <Suspense fallback={<span className="loading loading-spinner text-error"></span>}>
 
                     <div className="p-6 bg-gray-800 rounded-lg grid grid-cols-12 gap-20">
@@ -36,7 +36,7 @@ const Home = () => {
                             </div>
                         </div>
                         <div className="col-span-9 ">
-                            <h1 className='text-3xl font-bold text-gray-500 border-b text-center'>All {clickBtn} Meals</h1>
+                            <h1 className='text-3xl font-bold text-gray-500 border-b text-center'> {clickBtn} Meals List</h1>
                             <div className={`${!hidden ? "hidden" : ""} py-6 grid grid-cols-3 gap-4`}>
                                 {data.categories.map(item => <CategoryCard key={item.idCategory} categories={item} />)}
                             </div>
