@@ -1,5 +1,6 @@
 
 import React, { useState, useEffect } from 'react';
+import { Link } from 'react-router';
 
 const MealCard = ({ clickBtn }) => {
 
@@ -45,9 +46,11 @@ useEffect(() => {
                 </p>
 
                 <div className="card-actions w-full">
+                    <Link to={`/recipe/${meal.idMeal}`}>
                     <button className="btn btn-primary btn-block  border-none text-white font-bold  transition-all active:scale-95">
                         View Recipe Details
                     </button>
+                    </Link>
                 </div>
             </div>
         </div>

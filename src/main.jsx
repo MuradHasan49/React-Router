@@ -7,30 +7,35 @@ import OutletComponet from './Components/Outlet/OutletComponet.jsx'
 import Home from './Pages/Home.jsx'
 import About from './Pages/About.jsx'
 import Contact from './Pages/Contect.jsx'
+import RecipeDetails from './assets/ReUseComponets/RecipeDetails.jsx'
 
 const router = createBrowserRouter([
   {
     path: "/",
     Component: OutletComponet,
-    children:[
+    children: [
       {
-        index:true ,Component: Home
+        index: true, Component: Home
       },
       {
-        path : "about",
+        path: "about",
         Component: About
       },
       {
-        path : "contect",
+        path: "contect",
         Component: Contact
+      },
+      {
+        path: "recipe/:id",
+        Component: RecipeDetails
       },
     ]
   }
- 
+
 ])
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
-    <RouterProvider router={router}/>
+    <RouterProvider router={router} />
   </StrictMode>,
 )
