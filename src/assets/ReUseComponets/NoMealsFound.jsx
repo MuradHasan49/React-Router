@@ -4,12 +4,12 @@ import { MdOutlineNoFood } from 'react-icons/md';
 
 const NoMealsFound = () => {
     return (
-        <div className="flex justify-center items-center min-h-[600px] p-4 bg-transparent">
-            <div className="card w-full max-w-md bg-base-100/60 backdrop-blur-md border border-dashed border-base-300 shadow-xl">
+        <div className="flex justify-center items-center min-h-150 p-4 bg-transparent">
+            <div className="card w-full  bg-base-100/60 backdrop-blur-md border border-dashed border-base-300 shadow-xl">
                 
                 <div className="card-body items-center text-center py-12">
                     <div className="relative mb-12">
-                        <div className="absolute -top-12 left-1/2 -translate-x-1/2 flex gap-3">
+                        <div className="absolute -top-8 left-1/2 -translate-x-1/2 flex gap-3">
                             <GiHotMeal className="text-primary/40 animate-bounce transition-all" size={24} />
                             <GiBubblingBowl className="text-primary/20 animate-bounce delay-150" size={28} />
                             <GiHotMeal className="text-primary/40 animate-bounce delay-300" size={24} />
@@ -47,7 +47,7 @@ const NoMealsFound = () => {
                             above to discover our available gourmet selections."
                         </p>
                     </div>
-
+                        <p className="text-primary font-bold not-italic absolute bottom-2 right-2 animate-pulse ">MHS</p>
                     <div className="w-12 h-1 bg-primary/10 mx-auto rounded-full mt-8"></div>
                 </div>
             </div>
