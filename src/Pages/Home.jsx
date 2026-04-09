@@ -4,6 +4,7 @@ import { Suspense, useState } from 'react'
 import { use } from 'react'
 import CategoryCard from '../assets/ReUseComponets/CategoryCard'
 import MealCard from '../assets/ReUseComponets/MealCard'
+import NoMealsFound from '../assets/ReUseComponets/NoMealsFound'
 
 const API = fetch("https://www.themealdb.com/api/json/v1/1/categories.php").then(res => res.json())
 
@@ -37,7 +38,8 @@ const Home = () => {
                         <div className="col-span-9 ">
                             <h1 className='text-3xl font-bold text-gray-500 border-b text-center'> {clickBtn} Meals List</h1>
                             <div className={`${!hidden ? "hidden" : ""} py-6 grid grid-cols-3 gap-4`}>
-                                {data.categories.map(item => <CategoryCard key={item.idCategory} categories={item} />)}
+                                {!data ? " " :<div className='col-span-3'> <NoMealsFound/> </div>}
+                                {/* { data.categories.map(item => <CategoryCard key={item.idCategory} categories={item} />)} */}
                             </div>
                             <MealCard clickBtn={clickBtn} />
                         </div>
