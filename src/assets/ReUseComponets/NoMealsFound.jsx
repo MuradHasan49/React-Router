@@ -1,59 +1,54 @@
 import React from 'react';
-import { GiChefToque, GiCookingPot } from 'react-icons/gi';
-import { HiOutlineArrowNarrowRight } from 'react-icons/hi';
-import { MdOutlineRestaurantMenu } from 'react-icons/md';
+import { GiCookingPot, GiHotMeal, GiCampfire, GiBubblingBowl } from 'react-icons/gi';
+import { MdOutlineNoFood } from 'react-icons/md';
 
 const NoMealsFound = () => {
     return (
-        <div className="flex justify-center items-center min-h-[450px] p-4">
-            <div className="card w-full max-w-md bg-base-100 shadow-2xl border border-base-200">
+        <div className="flex justify-center items-center min-h-[600px] p-4 bg-transparent">
+            <div className="card w-full max-w-md bg-base-100/60 backdrop-blur-md border border-dashed border-base-300 shadow-xl">
                 
-               
-                <div className="relative h-32 bg-primary rounded-t-2xl flex items-center justify-center overflow-hidden">
-                    <GiCookingPot className="absolute -left-4 -bottom-4 text-white/10 text-9xl rotate-12" />
-                    <div className="bg-white/20 backdrop-blur-md p-4 rounded-full border border-white/30 shadow-xl">
-                        <GiChefToque className="text-white text-5xl animate-pulse" />
-                    </div>
-                </div>
+                <div className="card-body items-center text-center py-12">
+                    <div className="relative mb-12">
+                        <div className="absolute -top-12 left-1/2 -translate-x-1/2 flex gap-3">
+                            <GiHotMeal className="text-primary/40 animate-bounce transition-all" size={24} />
+                            <GiBubblingBowl className="text-primary/20 animate-bounce delay-150" size={28} />
+                            <GiHotMeal className="text-primary/40 animate-bounce delay-300" size={24} />
+                        </div>
 
-                <div className="card-body items-center text-center">
-                    
-                    <div className="badge badge-outline badge-primary font-bold uppercase tracking-widest text-[10px] mb-2">
-                        Empty Kitchen
-                    </div>
+                        <div className="relative">
+                            <GiCookingPot className="text-8xl text-base-content/10 absolute -inset-2 blur-sm" />
+                            <GiCookingPot className="text-8xl text-primary animate-pulse" />
+                        </div>
 
-                   
-                    <h2 className="card-title text-3xl font-black text-base-content">
-                        No Meals Found
-                    </h2>
-                    
-                   
-                    <p className="text-base-content/70 text-sm leading-relaxed my-4">
-                        We couldn't find any meals in this category. Our chefs are likely dreaming up new recipes! 
-                        Try selecting a different <span className="text-primary font-bold">Category</span> from the menu.
-                    </p>
-
-                    
-                    <div className="flex gap-4 my-2 text-base-content/20">
-                        <MdOutlineRestaurantMenu size={24} />
-                        <div className="divider divider-horizontal"></div>
-                        <GiCookingPot size={24} />
+                        <div className="absolute -bottom-5 left-1/2 -translate-x-1/2 flex justify-center text-orange-500 animate-pulse">
+                            <GiCampfire size={36} />
+                        </div>
                     </div>
 
-                   
-                    <div className="card-actions w-full mt-6">
-                        <button className="btn btn-primary btn-block group rounded-xl shadow-lg hover:shadow-primary/30 transition-all">
-                            Explore Menu
-                            <HiOutlineArrowNarrowRight className="text-xl group-hover:translate-x-2 transition-transform" />
-                        </button>
+                    <div className="flex items-center justify-center gap-2 text-base-content/30 italic font-medium mb-4">
+                        <MdOutlineNoFood size={20} />
+                        <span className="tracking-widest uppercase text-xs">Kitchen is Quiet</span>
                     </div>
-                </div>
 
-              
-                <div className="p-4 bg-base-200/50 rounded-b-2xl flex justify-center">
-                    <span className="text-[10px] font-medium text-base-content/40 uppercase tracking-[0.2em]">
-                        Freshness Guaranteed • 2026
-                    </span>
+                    <div className="space-y-6">
+                        <h2 className="text-4xl font-black uppercase tracking-tighter text-base-content leading-tight">
+                            A Waiting <span className="text-primary">Menu</span>
+                        </h2>
+                        
+                        <div className="flex items-center justify-center gap-3">
+                            <span className="h-px w-10 bg-primary/20"></span>
+                            <span className="text-[10px] font-bold uppercase tracking-[0.4em] text-primary/60">Chef's Note</span>
+                            <span className="h-px w-10 bg-primary/20"></span>
+                        </div>
+
+                        <p className="text-base-content/60 italic leading-relaxed max-w-xs mx-auto text-sm">
+                            "Our culinary inspirations are currently being refreshed. We kindly invite you to 
+                            <span className="text-primary font-bold not-italic"> select any category </span> 
+                            above to discover our available gourmet selections."
+                        </p>
+                    </div>
+
+                    <div className="w-12 h-1 bg-primary/10 mx-auto rounded-full mt-8"></div>
                 </div>
             </div>
         </div>
