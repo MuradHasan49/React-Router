@@ -109,7 +109,7 @@ const ProductCard = ({ mealData }) => {
             </div>
 
             {isVideoOpen && (
-                <div className="modal modal-open modal-middle backdrop-blur-md z-[100]">
+                <div className="modal modal-open modal-middle backdrop-blur-md z-100">
                     <div className="modal-box p-0 overflow-hidden max-w-4xl bg-black relative border border-white/10 shadow-2xl">
 
                         <div className="w-full aspect-video">
