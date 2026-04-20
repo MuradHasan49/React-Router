@@ -69,7 +69,6 @@ const Contact = () => {
             <div className="card bg-base-100 shadow-2xl">
               <div className="card-body">
                 <form className="space-y-4" onSubmit={(e) => e.preventDefault()}>
-*/}
                   <div className="form-control w-full">
                     <label className="label">
                       <span className="label-text font-semibold">Your Name</span>
@@ -81,7 +80,6 @@ const Contact = () => {
                     />
                   </div>
 
-                  {/* Email Input */}
                   <div className="form-control w-full">
                     <label className="label">
                       <span className="label-text font-semibold">Email Address</span>
@@ -93,7 +91,6 @@ const Contact = () => {
                     />
                   </div>
 
-                  {/* Subject Input */}
                   <div className="form-control w-full">
                     <label className="label">
                       <span className="label-text font-semibold">Subject</span>
@@ -105,7 +102,6 @@ const Contact = () => {
                     />
                   </div>
 
-                  {/* Message Textarea */}
                   <div className="form-control w-full">
                     <label className="label">
                       <span className="label-text font-semibold">Message</span>
@@ -116,7 +112,6 @@ const Contact = () => {
                     ></textarea>
                   </div>
 
-                  {/* Submit Button */}
                   <div className="form-control mt-6">
                     <button className="btn btn-primary w-full text-lg">Send Message</button>
                   </div>
