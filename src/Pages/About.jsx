@@ -43,26 +43,24 @@ const About = () => {
             </div>
 
 
-            <div className="bg-neutral text-neutral-content py-12">
-                <div className="container mx-auto px-4 flex justify-center">
-                    <div className="stats stats-vertical lg:stats-horizontal shadow bg-base-100 text-base-content">
-                        <div className="stat place-items-center">
-                            <div className="stat-title">Projects Delivered</div>
-                            <div className="stat-value text-primary">1.2K+</div>
-                            <div className="stat-desc">From Jan 2020 to present</div>
-                        </div>
+            <div className="container mx-auto px-4 py-16">
+                <div className="grid grid-cols-1 md:grid-cols-3 gap-8">
+                    <div className="card bg-base-100 py-6 shadow-xl border border-base-200 flex items-center justify-center gap-2">
+                        <div className="stat-title">Projects Delivered</div>
+                        <div className="text-primary stat-value">1.2K+</div>
+                        <div className="stat-desc">From Jan 2020 to present</div>
+                    </div>
 
-                        <div className="stat place-items-center">
-                            <div className="stat-title">Happy Clients</div>
-                            <div className="stat-value text-secondary">4,200</div>
-                            <div className="stat-desc">↗︎ 400 (22%) this year</div>
-                        </div>
+                    <div className="card bg-base-100 py-6 shadow-xl border border-base-200 flex items-center justify-center gap-2">
+                        <div className="stat-title">Happy Clients</div>
+                        <div className="stat-value text-secondary">4,200</div>
+                        <div className="stat-desc">↗︎ 400 (22%) this year</div>
+                    </div>
 
-                        <div className="stat place-items-center">
-                            <div className="stat-title">Team Members</div>
-                            <div className="stat-value">50+</div>
-                            <div className="stat-desc">Across 12 timezones</div>
-                        </div>
+                    <div className="card bg-base-100 py-6 shadow-xl border border-base-200 flex items-center justify-center gap-2">
+                        <div className="stat-title">Team Members</div>
+                        <div className="stat-value">50+</div>
+                        <div className="stat-desc">Across 12 timezones</div>
                     </div>
                 </div>
             </div>
