@@ -2,18 +2,14 @@ const Contact = () => {
   return (
     <div className="min-h-screen bg-base-100 text-base-content py-12">
 
-
       <div className="text-center max-w-2xl mx-auto mb-12 px-4">
         <h1 className="text-5xl font-bold mb-4">Contact Us</h1>
         <p className="text-lg opacity-80">
           Have a question, feedback, or want to work together? We'd love to hear from you. Drop us a message below!
         </p>
       </div>
-
       <div className="container mx-auto px-4 max-w-6xl">
         <div className="flex flex-col lg:flex-row gap-12 bg-base-200 rounded-3xl p-8 lg:p-12 shadow-xl">
-
-
           <div className="lg:w-1/3 flex flex-col justify-center space-y-8">
             <div>
               <h2 className="text-3xl font-bold mb-6">Get in Touch</h2>
@@ -21,7 +17,6 @@ const Contact = () => {
                 Fill out the form and our team will get back to you within 24 hours.
               </p>
             </div>
-
             <div className="flex items-center space-x-4">
               <div className="bg-primary text-primary-content p-3 rounded-full">
 
