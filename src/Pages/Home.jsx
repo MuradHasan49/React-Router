@@ -1,5 +1,3 @@
-import App from '../App'
-import { NavLink } from 'react-router'
 import { Suspense, useState } from 'react'
 import { use } from 'react'
 import CategoryCard from '../assets/ReUseComponets/CategoryCard'
