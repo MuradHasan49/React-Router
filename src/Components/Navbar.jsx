@@ -22,7 +22,7 @@ const Navbar = () => {
                             </ul>
                         </div>
                         <div className="navbar-end">
-                            <input type="text" placeholder="Search" className="input outline-none input-bordered  w-64 lg:w-auto" />
+                            <input type="text" placeholder="Search" className="input outline-none input-bordered border-gray-600 w-64 lg:w-auto" />
                         </div>
                     </div>
 
