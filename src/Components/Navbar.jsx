@@ -25,7 +25,6 @@ const Navbar = () => {
                             <input type="text" placeholder="Search" className="input outline-none input-bordered border-gray-600 w-64 lg:w-auto" />
                         </div>
                     </div>
-
                     <div className="collapse-content lg:hidden z-1">
                         <ul className="menu space-x-10">
                             <NavLink to="/"> <li className='py-1.5 px-3'>Home</li></NavLink>
